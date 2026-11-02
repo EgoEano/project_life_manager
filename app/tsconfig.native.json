@@ -1,0 +1,25 @@
+{
+    "extends": "./tsconfig.base.json",
+    "compilerOptions": {
+        "module": "esnext",
+        "moduleResolution": "node",
+        "jsx": "react-native",
+        "allowSyntheticDefaultImports": true,
+        "types": ["react-native", "jest"],
+        "paths": {
+            "@client/*": ["client/*"],
+            "@core/*": ["client/core/*"],
+            "@services/*": ["client/core/services/*"],
+            "@ui/*": ["client/core/ui/*"],
+            "@modules/*": ["client/modules/*"],
+            "@app/*": ["client/app/*"],
+            "@types/*": ["client/core/types/*"]
+        }
+    },
+    "include": [
+        "client/app/mobile*.tsx",
+        "client/core/**/*",
+        "client/modules/**/*"
+    ],
+    "exclude": ["**/node_modules", "**/Pods", "client/app/web*.tsx"]
+}

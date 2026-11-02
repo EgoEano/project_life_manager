@@ -1,0 +1,25 @@
+{
+    "extends": "./tsconfig.base.json",
+    "compilerOptions": {
+        "lib": ["dom", "dom.iterable", "esnext"],
+        "module": "esnext",
+        "moduleResolution": "bundler",
+        "jsx": "react-jsx",
+        "allowSyntheticDefaultImports": true,
+        "paths": {
+            "@client/*": ["client/*"],
+            "@core/*": ["client/core/*"],
+            "@services/*": ["client/core/services/*"],
+            "@ui/*": ["client/core/ui/*"],
+            "@modules/*": ["client/modules/*"],
+            "@app/*": ["client/app/*"],
+            "@types/*": ["client/core/types/*"]
+        }
+    },
+    "include": [
+        "client/app/web*.tsx",
+        "client/core/**/*",
+        "client/modules/**/*"
+    ],
+    "exclude": ["**/node_modules", "**/Pods", "client/app/mobile*.tsx"]
+}

@@ -1,0 +1,47 @@
+{
+    "name": "app",
+    "displayName": "app",
+    "hostUrl": "http://127.0.0.1:3000",
+    "settings": {
+        "language": {
+            "keys": {
+                "current": "system.lang.current"
+            }
+        },
+        "theme": {
+            "keys": {
+                "currentTheme": "system.theme.currentTheme",
+                "currentMode": "system.theme.currentMode"
+            }
+        }
+    },
+    "urls": {
+        "serverBasePath": ""
+    },
+    "authRoutes": {
+        "login": "/auth/login",
+        "logout": "/auth/logout",
+        "register": "/auth/register",
+        "refresh": "/auth/refresh",
+        "me": "/auth/me"
+    },
+    "modules": {
+        "wardrobe": {
+            "WARDROBE_CLOTHING_TABLE_NAME": "wardrobe_clothings",
+            "WARDROBE_OUTFITS_TABLE_NAME": "wardrobe_outfits",
+            "WARDROBE_OUTFITS_QUEUE_TABLE_NAME": "wardrobe_outfits_queue",
+            "WARDROBE_OUTFITS_QUEUE_MAIN_NAME": "wardrobe_main",
+            "WARDROBE_REF_SEASONS": "wardrobe_ref_seasons",
+            "WARDROBE_REF_SLOTS": "wardrobe_ref_slots"
+        },
+        "kitchen": {
+            "KITCHEN_PRODUCTS_TABLE_NAME": "kitchen_products",
+            "KITCHEN_DISHES_TABLE_NAME": "kitchen_dishes",
+            "KITCHEN_DISHES_QUEUE_TABLE_NAME": "kitchen_dishes_queue",
+            "KITCHEN_DISHES_QUEUE_MAIN_NAME": "kitchen_main",
+            "KITCHEN_REF_UNITS": "kitchen_ref_units",
+            "KITCHEN_REF_PRODUCT_CATEGORIES": "kitchen_ref_product_categories",
+            "KITCHEN_REF_DISH_CATEGORIES": "kitchen_ref_dish_categories"
+        }
+    }
+}
