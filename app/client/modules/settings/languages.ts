@@ -1,0 +1,46 @@
+import { LanguagesMap } from "../../core/types/language";
+
+export default {
+    'en-US': {
+        "navigation.settings": "Settings",
+
+        "settings.dataBackup": "Data backup",
+        "settings.downloadBackup": "Download backup",
+        "settings.upload": "Upload",
+        "settings.uploadBackup": "Upload from file",
+        "settings.uploadBackupConfirmation": "Uploading a backup may erase some existing data. Are you sure?",
+        "settings.dropDBConfirmation": "Are you sure you want to drop the Database permanently?",
+        "settings.dropDBConfirm": "Drop",
+        "settings.dropDB": "Drop Database",
+        "settings.exportBackupVarProgress": "Export: {{exportProgress}}",
+        "settings.importBackupVarProgress": "Import: {{importProgress}}",
+        "settings.lang.select": "Language select",
+        "settings.lang.en-US": "English",
+        "settings.lang.ru-RU": "Русский",
+        "settings.theme.header": "Theme settings",
+        "settings.theme.emptySelect": "Select Theme",
+        "settings.theme.darkTheme": "Dark",
+        "settings.theme.lightTheme": "Light",
+    },
+    'ru-RU': {
+        "navigation.settings": "Настройки",
+
+        "settings.dataBackup": "Резервное копирование данных",
+        "settings.downloadBackup": "Скачать резервную копию",
+        "settings.upload": "Загрузить",
+        "settings.uploadBackup": "Загрузить из файла",
+        "settings.uploadBackupConfirmation": "Загрузка резервной копии может стереть некоторые существующие данные. Вы уверены?",
+        "settings.dropDBConfirmation": "Вы уверены что хотите навсегда удалить базу данных?",
+        "settings.dropDBConfirm": "Удалить",
+        "settings.dropDB": "Удалить Базу Данных",
+        "settings.exportBackupVarProgress": "Экспорт: {{exportProgress}}",
+        "settings.importBackupVarProgress": "Импорт: {{importProgress}}",
+        "settings.lang.select": "Выбор языка",
+        "settings.lang.en-US": "English",
+        "settings.lang.ru-RU": "Русский",
+        "settings.theme.header": "Настройка тем",
+        "settings.theme.emptySelect": "Выберите тему",
+        "settings.theme.darkTheme": "Тёмная",
+        "settings.theme.lightTheme": "Светлая",
+    },
+} as LanguagesMap

@@ -1,0 +1,1 @@
+export { OutfitList } from './OutfitList.web';
